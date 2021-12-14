@@ -20,7 +20,7 @@ function Navbar() {
           </Link>
         </div>
         <div className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-          <div className='nav-menu-items'>
+          <div className='nav-menu-items' style={sidebar ? {} : {"display":"none"}}>
             <div className='navbar-toggle'>
               <Link to='#' className='menu-bars'>
                 <AiIcons.AiOutlineClose onClick={showSidebar} />
