@@ -87,5 +87,10 @@
 
   .grad{
     width: 96% !important;
+    height: 9rem
+  }
+
+  .hsc{
+    margin-top: 25px !important;
   }
 }
