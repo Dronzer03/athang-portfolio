@@ -1,0 +1,129 @@
+.home-page {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+
+.welcome-bs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fade-out 2s ease forwards 3.8s;
+}
+
+.svg-image path:nth-child(1) {
+  stroke-dasharray: 801;
+  stroke-dashoffset: 801;
+  animation: line-anim 2s ease forwards;
+}
+.svg-image path:nth-child(2) {
+  stroke-dasharray: 465;
+  stroke-dashoffset: 465;
+  animation: line-anim 2s ease forwards 0.3s;
+}
+.svg-image path:nth-child(3) {
+  stroke-dasharray: 299;
+  stroke-dashoffset: 299;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+.svg-image path:nth-child(4) {
+  stroke-dasharray: 510;
+  stroke-dashoffset: 510;
+  animation: line-anim 2s ease forwards 0.9s;
+}
+.svg-image path:nth-child(5) {
+  stroke-dasharray: 321;
+  stroke-dashoffset: 321;
+  animation: line-anim 2s ease forwards 1.2s;
+}
+.svg-image path:nth-child(6) {
+  stroke-dasharray: 755;
+  stroke-dashoffset: 755;
+  animation: line-anim 2s ease forwards 1.5s;
+}
+.svg-image path:nth-child(7) {
+  stroke-dasharray: 465;
+  stroke-dashoffset: 465;
+  animation: line-anim 2s ease forwards 1.8s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 100;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.top-navbar {
+  height: 60px;
+  text-align: right;
+}
+
+.home-content {
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.initial-text {
+  color: #64ffd3;
+}
+
+.name-text {
+  color: aliceblue;
+  font-size: 5rem;
+}
+
+.sub-text {
+  color: antiquewhite;
+  font-size: 4rem;
+}
+
+.intro-text {
+  color: #64ffd3;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  width: 50rem;
+}
+
+.HSBC {
+  color: aliceblue;
+}
+
+.navButtons{
+  margin-left: 8%;
+  margin-top: 2%
+}
+
+#resume-button{
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 736px) {
+  .svg-image {
+    width: 370px;
+  }
+
+  .name-text {
+    font-size: 3rem;
+  }
+
+  .sub-text {
+    font-size: 2rem;
+  }
+  .intro-text {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .icons {
+    display: none;
+  }
+}

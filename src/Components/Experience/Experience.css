@@ -1,0 +1,91 @@
+.exp-page {
+  background-color: black;
+  height: 100vh;
+  color: #64ffd3;
+}
+
+.exp-num {
+  font-size: 1.5rem;
+}
+
+.exp-text {
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+.exp-content {
+  margin-left: 10%;
+  padding-top: 5%;
+}
+
+.persi-exp {
+  padding-top: 1%;
+}
+
+.persi-logo {
+  width: 40%;
+  height: 40%;
+  padding-top: 5px;
+}
+
+.exp-companies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  max-width: 1200px;
+}
+
+.exp-companies .card {
+  position: relative;
+  box-shadow: inset 5px 5px 5px rgba(140, 207, 238, 0.05);
+  border-radius: 15px;
+  margin: 30px;
+  width: 320px;
+  height: 400px;
+  background-color: #c4f9ea;
+  justify-content: center;
+  align-items: center;
+}
+
+.exp-companies .card .box {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background-color: #203847;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.exp-companies .card .card-content {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.company-title {
+  color: aliceblue;
+  font-size: 1.3rem;
+}
+
+.designation {
+  font-size: 1.2rem;
+}
+
+.exp-companies .card:hover .box {
+  transform: translateY(-50px);
+}
+
+.role-desc {
+  color: aliceblue;
+}
+
+@media only screen and (max-width: 736px) {
+  .exp-page {
+    height: 200vh;
+  }
+}

@@ -1,0 +1,72 @@
+.edu-page {
+  height: 120vh;
+  background-color: black;
+  color: #64ffd3;
+}
+
+.edu-num {
+  font-size: 1.5rem;
+}
+
+.edu-text, .cert-text {
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+.edu-content, .certs {
+  margin-left: 10%;
+  padding-top: 5%;
+}
+.ssc, .hsc, .grad{
+    background-image: linear-gradient(to bottom right, #64ffd3, #b8fae7);;
+    height: 6rem;
+    color:black;
+    cursor : pointer;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    filter: blur(0);
+  }
+
+.grad{
+  height: 8rem;
+}
+
+.grad h2{
+  padding-top: 2.8rem;
+}
+.ssc h2, .hsc h2{
+  padding-top: 1.3rem;
+}
+
+.hsc.back, .ssc.back,.grad.back{
+  transform: rotateY(360deg);
+}
+
+.hsc.front, .ssc.front,.grad.front{
+  text-align: center;
+  font-family: cursive;
+}
+
+.back-content{
+  padding-left: 1rem;
+}
+
+.edu-page .row{
+  padding-top: 1.5rem;
+  overflow-x: auto;
+}
+
+.grad-list{
+  columns: 2;
+  line-height: 1rem;
+}
+
+.ssc-list{
+  line-height: 1rem;
+}
+
+.java-1{
+  font-size: 1.5rem;
+}
