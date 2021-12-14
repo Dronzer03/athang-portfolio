@@ -54,7 +54,7 @@ function HomePage() {
         </div>
         <div className="navButtons" ref={navButtonRef}>
           <Button id="resume-button" onClick={saveFile}>
-            Download Click here to download Resume
+            Click here to download Resume
           </Button>
         </div>
       </div>

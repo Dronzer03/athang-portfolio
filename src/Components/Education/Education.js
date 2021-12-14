@@ -158,7 +158,7 @@ function Education() {
             </div>
             <div className="col-md-1 col-sm-1 col-lg-1"></div>
           </div>
-          <div className="row col-md-12 col-sm-12 col-lg-12" ref={row3}>
+          <div className="col-md-12 col-sm-12 col-lg-12 row" ref={row3}>
             <div className="col-md-2 col-sm-2 col-lg-2"></div>
             {cardThree ? (
               <div

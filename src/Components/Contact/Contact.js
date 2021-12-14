@@ -57,6 +57,10 @@ function Contact() {
         <div className="contact-box">
           <div className="contact-links">
             <h2>CONTACT</h2>
+            <div className="details">
+              +91 8793673422 <br/>
+              athang.kulkarni03@gmail.com
+            </div>
             <div className="links">
               <div className="link">
                 <a href="https://www.linkedin.com/in/athang03" target="_blank">
