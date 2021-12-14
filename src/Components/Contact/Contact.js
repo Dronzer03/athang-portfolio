@@ -131,7 +131,7 @@ function Contact() {
             </div>
           </div>
           <div className="contact-form-wrapper">
-            <form>
+            <div>
               <div className="form-item">
                 <input
                   type="text"
@@ -165,7 +165,7 @@ function Contact() {
               <button className="submit-btn" onClick={sendMail}>
                 Send
               </button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
