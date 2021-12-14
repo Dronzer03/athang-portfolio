@@ -1,16 +1,41 @@
-.nav-num{
-    color: #64FFD3;
-    cursor: pointer;
+.nav-num {
+  color: #64ffd3;
+  cursor: pointer;
 }
 
-.nav-text{
-    color:aliceblue;
-    margin-right: 1%;
-    margin-left:5px;
-    cursor: pointer;
+.nav-text {
+  color: aliceblue;
+  margin-right: 1%;
+  margin-left: 5px;
+  cursor: pointer;
 }
 
-.navbar-op{
-    margin-right: 3%;
-    padding-top: 1%;
+.navbar-op {
+  margin-right: 3%;
+  padding-top: 1%;
+}
+
+.mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 400px){
+    .navbar-op{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .nav-icon{
+        font-size: 2rem;
+        margin-top: 1rem;
+        float: left;
+        margin-left: 1rem;
+    }
+
+    .menu-bars{
+        margin-left: 1rem;
+    }
 }

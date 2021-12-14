@@ -1,11 +1,53 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Contact.css";
 import emailjs from "emailjs-com";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Contact() {
   const [from, setFrom] = useState("");
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
+  const title = useRef();
+  const contactRef = useRef();
+
+  useEffect(()=>{
+    gsap.fromTo(
+      title.current,
+      { autoAlpha: 0 },
+      {
+        autoAlpha: 1,
+        duration: 2,
+        ease: "none",
+        scrollTrigger: {
+          trigger: title.current,
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "play none none reverse",
+          scrub: true,
+        },
+      }
+    );
+    gsap.fromTo(
+      contactRef.current,
+      { autoAlpha: 0 },
+      {
+        autoAlpha: 1,
+        duration: 2,
+        ease: "none",
+        scrollTrigger: {
+          trigger: contactRef.current,
+          start: "top center",
+          end: "bottom center+=199",
+          toggleActions: "play none none reverse",
+          scrub: true,
+        },
+      }
+    );
+  })
+
   const changeEmail = (e) => {
     setEmail(e.target.value);
   };
@@ -47,14 +89,14 @@ function Contact() {
     }
   };
   return (
-    <div className="contact-page">
+    <div className="contact-page" id="contact">
       <div className="con-content">
-        <div className="contact-title">
+        <div className="contact-title" ref={title}>
           <span className="contact-num">04. </span>
           <span className="contact-text">Get in Touch</span>
         </div>
 
-        <div className="contact-box">
+        <div className="contact-box" ref={contactRef}>
           <div className="contact-links">
             <h2>CONTACT</h2>
             <div className="details">

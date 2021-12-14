@@ -42,7 +42,7 @@ function HomePage() {
 
   return (
     <>
-      <div className="home-page">
+      <div className="home-page" id="home">
         <div className="welcome-bs">
           <Welcome />
         </div>
