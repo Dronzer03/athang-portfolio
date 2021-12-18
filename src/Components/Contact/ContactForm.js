@@ -16,6 +16,16 @@ function ContactForm() {
   const title = useRef();
   const contactRef = useRef();
 
+  if(/Android */.test(navigator.appVersion)){
+    window.addEventListener("resize", function(){
+       if(document.activeElement.tagName=="INPUT" || document.activeElement.tagName=="TEXTAREA"){
+          window.setTimeout(function(){
+             document.activeElement.scrollIntoViewIfNeeded();
+          },0);
+       }
+    })
+ }
+
   useEffect(() => {
     gsap.fromTo(
       title.current,

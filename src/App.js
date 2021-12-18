@@ -10,16 +10,6 @@ import ContactForm from "./Components/Contact/ContactForm";
 
 function App() {
 
-  if(/Android */.test(navigator.appVersion)){
-    window.addEventListener("resize", function(){
-       if(document.activeElement.tagName=="input" || document.activeElement.tagName=="textarea"){
-          window.setTimeout(function(){
-             document.activeElement.scrollIntoViewIfNeeded();
-          },0);
-       }
-    })
- }
-
   useEffect(() => {
     document.title = "Athang"
   }, [])
