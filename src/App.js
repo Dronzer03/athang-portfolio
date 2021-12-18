@@ -12,6 +12,15 @@ function App() {
 
   useEffect(() => {
     document.title = "Athang"
+    if(/Android */.test(navigator.appVersion)){
+      window.addEventListener("resize", function(){
+         if(document.activeElement.tagName=="input" || document.activeElement.tagName=="textarea"){
+            window.setTimeout(function(){
+               document.activeElement.scrollIntoViewIfNeeded();
+            },0);
+         }
+      })
+   }
   }, [])
 
   return (
