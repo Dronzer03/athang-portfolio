@@ -5,7 +5,6 @@ import About from "./Components/About/About";
 import SideIcons from "./Components/SideIcons";
 import Experience from "./Components/Experience/Experience"
 import Education from "./Components/Education/Education";
-import Contact from "./Components/Contact/Contact";
 import ContactForm from "./Components/Contact/ContactForm";
 
 function App() {

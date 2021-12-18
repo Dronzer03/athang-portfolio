@@ -62,7 +62,7 @@ function Contact() {
 
   const sendMail = (e) => {
       e.preventDefault();
-    if (from != "" && email != "" && msg != "") {
+    if (from !== "" && email !== "" && msg !== "") {
       var temp = {
         from,
         email,

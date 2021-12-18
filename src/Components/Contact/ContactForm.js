@@ -18,18 +18,18 @@ function ContactForm() {
 
   const onFocusChange = (e) => {
     e.preventDefault();
-    document.activeElement.scrollIntoView();
+    console.log("In event listener 2") 
+    document.activeElement.scrollIntoViewIfNeeded();
   }
 
-//   if(/Android */.test(navigator.appVersion)){
-//     window.addEventListener("resize", function(){
-//        if(document.activeElement.tagName=="INPUT" || document.activeElement.tagName=="TEXTAREA"){
-//           window.setTimeout(function(){
-//              document.activeElement.scrollIntoViewIfNeeded();
-//           },0);
-//        }
-//     })
-//  }
+    window.addEventListener("resize", function(){
+      console.log("In event listener") 
+      if(document.activeElement.tagName=="INPUT" || document.activeElement.tagName=="TEXTAREA"){
+          window.setTimeout(function(){
+             document.activeElement.scrollIntoViewIfNeeded();
+          },0);
+       }
+    })
 
   useEffect(() => {
     gsap.fromTo(
