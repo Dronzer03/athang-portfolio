@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/athang-portfolio/static/css/main.afd379df.chunk.css",
-    "main.js": "/athang-portfolio/static/js/main.6120cc33.chunk.js",
-    "main.js.map": "/athang-portfolio/static/js/main.6120cc33.chunk.js.map",
+    "main.css": "/athang-portfolio/static/css/main.795f4ae3.chunk.css",
+    "main.js": "/athang-portfolio/static/js/main.0bf03525.chunk.js",
+    "main.js.map": "/athang-portfolio/static/js/main.0bf03525.chunk.js.map",
     "runtime-main.js": "/athang-portfolio/static/js/runtime-main.d9b8c219.js",
     "runtime-main.js.map": "/athang-portfolio/static/js/runtime-main.d9b8c219.js.map",
     "static/css/2.383c0125.chunk.css": "/athang-portfolio/static/css/2.383c0125.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.e4fe7424.chunk.js.map": "/athang-portfolio/static/js/2.e4fe7424.chunk.js.map",
     "index.html": "/athang-portfolio/index.html",
     "static/css/2.383c0125.chunk.css.map": "/athang-portfolio/static/css/2.383c0125.chunk.css.map",
-    "static/css/main.afd379df.chunk.css.map": "/athang-portfolio/static/css/main.afd379df.chunk.css.map",
+    "static/css/main.795f4ae3.chunk.css.map": "/athang-portfolio/static/css/main.795f4ae3.chunk.css.map",
     "static/js/2.e4fe7424.chunk.js.LICENSE.txt": "/athang-portfolio/static/js/2.e4fe7424.chunk.js.LICENSE.txt",
     "static/media/eQ.2ccaa947.jfif": "/athang-portfolio/static/media/eQ.2ccaa947.jfif"
   },
@@ -18,7 +18,7 @@
     "static/js/runtime-main.d9b8c219.js",
     "static/css/2.383c0125.chunk.css",
     "static/js/2.e4fe7424.chunk.js",
-    "static/css/main.afd379df.chunk.css",
-    "static/js/main.6120cc33.chunk.js"
+    "static/css/main.795f4ae3.chunk.css",
+    "static/js/main.0bf03525.chunk.js"
   ]
 }
