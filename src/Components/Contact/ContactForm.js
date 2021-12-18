@@ -146,7 +146,7 @@ function ContactForm() {
                     <label>Name:</label>
                   </div>
                   <div>
-                    <input id="name" value={from} onChange={changeFrom} />
+                    <input href="#" id="name" />
                   </div>
                   <div>
                     <label>Email:</label>
