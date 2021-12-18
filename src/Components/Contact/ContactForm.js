@@ -16,15 +16,20 @@ function ContactForm() {
   const title = useRef();
   const contactRef = useRef();
 
-  if(/Android */.test(navigator.appVersion)){
-    window.addEventListener("resize", function(){
-       if(document.activeElement.tagName=="INPUT" || document.activeElement.tagName=="TEXTAREA"){
-          window.setTimeout(function(){
-             document.activeElement.scrollIntoViewIfNeeded();
-          },0);
-       }
-    })
- }
+  onFocusChange = (e) => {
+    e.preventDefault();
+    document.activeElement.scrollIntoView();
+  }
+
+//   if(/Android */.test(navigator.appVersion)){
+//     window.addEventListener("resize", function(){
+//        if(document.activeElement.tagName=="INPUT" || document.activeElement.tagName=="TEXTAREA"){
+//           window.setTimeout(function(){
+//              document.activeElement.scrollIntoViewIfNeeded();
+//           },0);
+//        }
+//     })
+//  }
 
   useEffect(() => {
     gsap.fromTo(
@@ -156,7 +161,7 @@ function ContactForm() {
                     <label>Name:</label>
                   </div>
                   <div>
-                    <input id="name" value={from} onChange={changeFrom} />
+                    <input id="name" value={from} onChange={changeFrom} onFocus={onFocusChange} />
                   </div>
                   <div>
                     <label>Email:</label>
