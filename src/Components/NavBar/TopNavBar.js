@@ -25,11 +25,11 @@ function TopNavBar() {
           <span className="nav-text">Get in touch</span>
         </Link>
       </div>
-      {/* <div className="mobile">
+      <div className="mobile">
         <Router>
           <Navbar />
         </Router>
-      </div> */}
+      </div>
     </>
   );
 }
