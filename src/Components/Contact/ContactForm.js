@@ -16,7 +16,7 @@ function ContactForm() {
   const title = useRef();
   const contactRef = useRef();
 
-  onFocusChange = (e) => {
+  const onFocusChange = (e) => {
     e.preventDefault();
     document.activeElement.scrollIntoView();
   }
