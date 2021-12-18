@@ -1,0 +1,83 @@
+.contact-form {
+  height: 100vh;
+  background-color: black;
+  color: #64ffd3;
+}
+
+.con-content {
+  margin-left: 10%;
+  padding-top: 5%;
+}
+
+.contact-text {
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+.contact-num {
+  font-size: 1.5rem;
+}
+
+.contact-box {
+  width: clamp(100px, 90%, 900px);
+  height: 33rem;
+  border-color: #64ffd3;
+  box-shadow: 5px 10px 18px #64ffd3;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3% 3%;
+}
+
+.con-icons {
+  color: aliceblue;
+  font-size: 2rem;
+}
+
+.contact-box h2 {
+  margin-top: 3%;
+}
+
+.contact-box .h2-div {
+  width: 100%;
+}
+
+.contact-box .h2-div .details {
+  text-align: center;
+  justify-content: center;
+}
+
+.contact-box .mail {
+  font-size: 1.2rem;
+}
+
+.contact-box .feedback {
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.contact-box .form {
+  color: aliceblue;
+}
+
+.contact-box input,
+.contact-box textarea {
+  width: 90%;
+  outline: 0;
+  background: none;
+  color: aliceblue;
+}
+
+.contact-box .btns {
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+.ind-icons{
+  margin: 10px;
+  cursor: pointer;
+}
+
+.ind-icons :hover{
+  color: #64ffd3;
+}
