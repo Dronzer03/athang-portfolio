@@ -11,6 +11,14 @@ function App() {
 
   useEffect(() => {
     document.title = "Athang"
+    window.addEventListener("resize", function(){
+      console.log("In event listener") 
+      if(document.activeElement.tagName=="INPUT" || document.activeElement.tagName=="TEXTAREA"){
+          window.setTimeout(function(){
+             document.activeElement.scrollIntoViewIfNeeded();
+          },0);
+       }
+    })
   }, [])
 
   return (

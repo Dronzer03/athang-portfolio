@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-scroll";
 import Navbar from "../SideNavBar/Navbar";
 import "./TopNavBar.css";
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function TopNavBar() {
   return (
@@ -26,9 +25,7 @@ function TopNavBar() {
         </Link>
       </div>
       <div className="mobile">
-        <Router>
-          <Navbar />
-        </Router>
+        <Navbar />
       </div>
     </>
   );
