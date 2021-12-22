@@ -1,3 +1,20 @@
+::-webkit-scrollbar{
+  width: 1em;
+  background: black;
+}
+
+::-webkit-scrollbar-track{
+  background: #03a175;
+  border-radius: 100vw;
+  margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb{
+  background: cyan;
+  border-radius: 100vw;
+  border: .15em solid #03a175;
+}
+
 .linkedin {
   position: fixed;
   left: 3%;
