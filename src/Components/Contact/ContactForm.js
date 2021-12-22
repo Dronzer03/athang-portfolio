@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaGithub, FaWhatsapp, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import useWindowDimensions from  './useWindowDimensions'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,6 +23,8 @@ function ContactForm() {
   };
 
   useEffect(() => {
+    const { height, width } = useWindowDimensions();
+
     setTimeout(
       () =>
         document
@@ -29,8 +32,8 @@ function ContactForm() {
           .setAttribute(
             "content",
             "height=" +
-              window.innerHeight * 0.9 +
-              "px, width=device-width, initial-scale=1.0"
+              height +
+              "px, width="+ width  +", initial-scale=1.0"
           ),
       300
     );
