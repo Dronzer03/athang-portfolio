@@ -22,11 +22,13 @@ function ContactForm() {
   };
 
   useEffect(() => {
-    var meta = document.createElement("meta");
-    meta.name = "viewport";
-    meta.content =
-      "width=device-width,height=" + window.innerHeight + ", initial-scale=1.0";
-    document.getElementsByTagName("head")[0].appendChild(meta);
+    setTimeout(function () {
+      var viewheight = $(window).height();
+      var viewwidth = $(window).width();
+      var viewport = $("meta[name=viewport]");
+      viewport.attr("content", "height=" + viewheight + "px, width=" + 
+      viewwidth + "px, initial-scale=1.0");
+  }, 300);
 
     gsap.fromTo(
       title.current,
