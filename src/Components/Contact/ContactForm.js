@@ -19,17 +19,14 @@ function ContactForm() {
   const onFocusChange = (e) => {
     e.preventDefault();
     document.activeElement.scrollIntoViewIfNeeded();
-  }
+  };
 
   useEffect(() => {
-    window.addEventListener("resize", function(){
-      console.log("In event listener") 
-      if(document.activeElement.tagName=="INPUT" || document.activeElement.tagName=="TEXTAREA"){
-          window.setTimeout(function(){
-             document.activeElement.scrollIntoViewIfNeeded();
-          },0);
-       }
-    })
+    var meta = document.createElement("meta");
+    meta.name = "viewport";
+    meta.content =
+      "width=device-width,height=" + window.innerHeight + ", initial-scale=1.0";
+    document.getElementsByTagName("head")[0].appendChild(meta);
 
     gsap.fromTo(
       title.current,
@@ -137,17 +134,13 @@ function ContactForm() {
                 <div className="mail">Contact Number: +91 8793673422</div>
                 <div className="mail">Email: athang.kulkarni03@gmail.com</div>
                 <div className="con-icons">
-                  <IconContext.Provider value={{ margin: "10px", cursor: "pointer" }}>
-                  <FaGithub className="ind-icons" onClick={onGitClick} />
-                  <FaWhatsapp className="ind-icons" onClick={onWAClick} />
-                  <FaLinkedin
-                    onClick={onLinkedClick}
-                    className="ind-icons"
-                  />
-                  <FaInstagram
-                    onClick={onInstaClick}
-                    className="ind-icons"
-                  />
+                  <IconContext.Provider
+                    value={{ margin: "10px", cursor: "pointer" }}
+                  >
+                    <FaGithub className="ind-icons" onClick={onGitClick} />
+                    <FaWhatsapp className="ind-icons" onClick={onWAClick} />
+                    <FaLinkedin onClick={onLinkedClick} className="ind-icons" />
+                    <FaInstagram onClick={onInstaClick} className="ind-icons" />
                   </IconContext.Provider>
                 </div>
               </div>
@@ -160,7 +153,12 @@ function ContactForm() {
                     <label>Name:</label>
                   </div>
                   <div>
-                    <input id="name" value={from} onChange={changeFrom} onFocus={onFocusChange} />
+                    <input
+                      id="name"
+                      value={from}
+                      onChange={changeFrom}
+                      onFocus={onFocusChange}
+                    />
                   </div>
                   <div>
                     <label>Email:</label>
