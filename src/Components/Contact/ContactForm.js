@@ -16,28 +16,27 @@ function ContactForm() {
   const [msg, setMsg] = useState("");
   const title = useRef();
   const contactRef = useRef();
+  const { height, width } = useWindowDimensions();
 
   const onFocusChange = (e) => {
     e.preventDefault();
     document.activeElement.scrollIntoViewIfNeeded();
   };
 
+  setTimeout(
+    () =>
+      document
+        .querySelector("meta[name=viewport]")
+        .setAttribute(
+          "content",
+          "height=" +
+            height +
+            "px, width="+ width  +", initial-scale=1.0"
+        ),
+    300
+  );
+
   useEffect(() => {
-    const { height, width } = useWindowDimensions();
-
-    setTimeout(
-      () =>
-        document
-          .querySelector("meta[name=viewport]")
-          .setAttribute(
-            "content",
-            "height=" +
-              height +
-              "px, width="+ width  +", initial-scale=1.0"
-          ),
-      300
-    );
-
     gsap.fromTo(
       title.current,
       { autoAlpha: 0 },
