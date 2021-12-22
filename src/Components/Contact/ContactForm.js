@@ -16,22 +16,8 @@ function ContactForm() {
   const [msg, setMsg] = useState("");
   const title = useRef();
   const contactRef = useRef();
-  //const { height, width } = useWindowDimensions();
-  const [height, setHeight] = useState(window.innerHeight);
-
-  const updateDimensions = () => {
-    setHeight(window.innerHeight);
-  }
 
   useEffect(() => {
-    var meta = document.createElement("meta");
-    meta.name = "viewport";
-    meta.content =
-      "width=device-width,height=" + height + ", initial-scale=1.0";
-    document.getElementsByTagName("head")[0].appendChild(meta);
-
-    window.addEventListener('resize', updateDimensions);
-
     gsap.fromTo(
       title.current,
       { autoAlpha: 0 },
