@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaGithub, FaWhatsapp, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import Helmet from "react-helmet";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,14 +23,6 @@ function ContactForm() {
   };
 
   useEffect(() => {
-    setTimeout(function () {
-      var viewheight = $(window).height();
-      var viewwidth = $(window).width();
-      var viewport = $("meta[name=viewport]");
-      viewport.attr("content", "height=" + viewheight + "px, width=" + 
-      viewwidth + "px, initial-scale=1.0");
-  }, 300);
-
     gsap.fromTo(
       title.current,
       { autoAlpha: 0 },
@@ -123,6 +116,12 @@ function ContactForm() {
 
   return (
     <>
+      <Helmet>
+        <meta
+          name="viewport"
+          content="width=device-width,height=device-height, initial-scale=1"
+        />
+      </Helmet>
       <div className="contact-form" id="contact">
         <div className="con-content">
           <div className="contact-title" ref={title}>
