@@ -97,6 +97,7 @@ function ContactForm() {
         )
         .then((res) => {
           console.log(res);
+          alert("Thank you for your response! I will get back to you shortly.");
           setEmail("");
           setFrom("");
           setMsg("");
