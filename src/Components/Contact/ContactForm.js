@@ -6,7 +6,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaGithub, FaWhatsapp, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import useWindowDimensions from  './useWindowDimensions'
+import useWindowDimensions from "./useWindowDimensions";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,23 +18,16 @@ function ContactForm() {
   const contactRef = useRef();
   const { height, width } = useWindowDimensions();
 
+  var meta = document.createElement("meta");
+  meta.name = "viewport";
+  meta.content =
+    "width=device-width,height=" + height + ", initial-scale=1.0";
+  document.getElementsByTagName("head")[0].appendChild(meta);
+
   const onFocusChange = (e) => {
     e.preventDefault();
     document.activeElement.scrollIntoViewIfNeeded();
   };
-
-  setTimeout(
-    () =>
-      document
-        .querySelector("meta[name=viewport]")
-        .setAttribute(
-          "content",
-          "height=" +
-            height +
-            "px, width="+ width  +", initial-scale=1.0"
-        ),
-    300
-  );
 
   useEffect(() => {
     gsap.fromTo(
