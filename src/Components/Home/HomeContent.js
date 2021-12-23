@@ -4,7 +4,7 @@ import "./HomePage.css";
 function HomeContent() {
   return (
     <>
-      <div className="initial-text">Hi, my name is</div>
+      <div className="initial-text">Hola, I am</div>
       <div className="name-text">Athang Kulkarni.</div>
       <div className="sub-text">I build apps for fun and work.</div>
       <div className="intro-text">

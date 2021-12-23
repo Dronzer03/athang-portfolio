@@ -4,7 +4,7 @@
 }
 
 ::-webkit-scrollbar-track{
-  background: #03a175;
+  background: transparent;
   border-radius: 100vw;
   margin-block: .5em;
 }
